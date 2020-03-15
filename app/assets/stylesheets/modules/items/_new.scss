@@ -1,0 +1,139 @@
+.sell {
+    height: 100%;
+    background-color: #f8f8f8;
+    &__block {
+        background: #fff;
+        margin: 0 auto;
+        width: 700px;
+        &__head {
+            display: block;
+            height: 128px;
+            padding: 30px;
+            font-size: 24px;
+            text-align: center;
+            align-items: center;
+        }
+        &__form {
+            display: block;
+            border: 1px solid #eee;
+            padding: 0 40px 64px;
+            &__upload {
+                padding: 40px;
+                vertical-align: baseline;
+                margin: 0;
+                border-width: 0px;
+                border-style: initial;
+                border-color: initial;
+                border-image: initial;
+                &__head {
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 1.4em;
+                }
+            }
+            &__name {
+                display: flex;
+                align-items: center;
+            }
+            &__btn {
+                margin-bottom: 32px;
+                width: 360px;
+                margin: 0 auto 24px;
+                background-color: red;
+                color: white;
+                margin-bottom: 24px;
+                font-size: 17px;
+                min-height: 48px;
+                font-weight: bold;;
+                border-radius: 4px;
+            }
+        }
+    }
+    #image-box-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        min-height: 162px;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        position: relative;
+        border-width: 1px;
+        border-style: dashed;
+        border-color: rgb(204,204,204);
+        background-color: #F5F5F5;
+        border-image: initial;
+        transition: all 0.5s ease-out 0s;
+    }
+    .item-num-0{
+        width: 100%;
+    }
+    .item-num-1{
+        width: 491px;
+    }
+    .item-num-2{
+        width: 363px;
+    }
+    .item-num-3{
+        width: 234px;
+    }
+    .item-num-4{
+        width: 106px;
+    }
+      //下段のfile_field
+    .item-num-5{
+        width: 100%;
+    }
+    .item-num-6{
+        width: 491px;
+    }
+    .item-num-7{
+        width: 363px;
+    }
+    .item-num-8{
+        width: 234px;
+    }
+    .item-num-9{
+        width: 106px;
+    }
+    .form-group {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: inherit;
+        height: 48px;
+        margin: 0;
+        outline: 0;
+        padding: 0 16px;
+        width: 100%;
+        &__name {
+            border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                font-family: inherit;
+                font-size: inherit;
+                height: 48px;
+                margin: 0;
+                outline: 0;
+                padding: 0 16px;
+                width: 100%;
+        }
+    }
+    .require {
+        background-color: red;
+        color: white;
+        margin-left: 8px;
+        padding: 2px 4px;
+        border-radius: 2px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.4em;
+    }
+}

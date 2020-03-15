@@ -1,0 +1,32 @@
+.sell
+  %section.sell__block
+    = form_with model:@item, local:true do |f|
+      %h2.sell__block__head
+        商品情報を入力
+      .sell_block__form
+        .sell_block__form__upload__head
+          %h3.sell__block__form__upload__head
+            出品画像
+            %span.require
+              必須
+          %p
+            最大10枚までアップロードできます
+          #image-box-1
+            .item-num-0#image-box__container
+              = f.fields_for :images do |i|
+                .input-area
+                  = i.file_field :image, type: 'file', name: "item[images_attributes] [] [src]", value: "", id:"img-file"
+                  %label{for: "img-file"}
+                    %i.fas.fa-camera
+
+        .sell__block__form__name
+          .form-group__name
+            %label
+              商品名
+              %span.require
+                必須
+            %div
+              = f.text_field :name, placeholder:"商品名（必須 40字まで）", class: "form__group__name"
+        .sell__block__form__btn
+          %div
+            = f.submit "出品する", clas: "btn-default__btn-red"
